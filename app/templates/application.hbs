@@ -1,12 +1,14 @@
 <header>
-    {{#link-to 'index'}}<div class="logo"></div>{{/link-to}}
-    <div class="space"></div>
-    <div class="search">
-        <div class="icon">Q</div>
-        <input type="text" placeholder="Search Magento">
+    <div class="container">
+        {{#link-to 'index'}}<div class="logo"></div>{{/link-to}}
+        <div class="space"></div>
+        <div class="search">
+            <div class="icon">Q</div>
+            <input type="text" placeholder="Search Magento">
+        </div>
+        <div class="free-demo">Free Demo</div>
+        <div class="account">My Account</div>
     </div>
-    <div class="free-demo">Free Demo</div>
-    <div class="account">My Account</div>
 </header>
 <nav>
     <ul class="top-level">
@@ -28,50 +30,52 @@
 {{outlet}}
 </div>
 <footer>
-    <div class="description">
-        {{#link-to 'index'}}<div class="logo"></div>{{/link-to}}
-        <div class="text">eCommerce platform, solutions and services to help grow your business.</div>
-    </div>
-    <div class="links">
-        <div class="item">
-            <ul>
-                <li class="light">Learn More</li>
-                <li>Company</li>
-                <li>Careers</li>
-                <li>Press Room</li>
-            </ul>
+    <div class="container">
+        <div class="description">
+            {{#link-to 'index'}}<div class="logo"></div>{{/link-to}}
+            <div class="text">eCommerce platform, solutions and services to help grow your business.</div>
         </div>
-        <div class="item">
-            <ul>
-                <li class="light">Contact</li>
-                <li class="light">Language</li>
-                <li>English</li>
-            </ul>
+        <div class="links">
+            <div class="item">
+                <ul>
+                    <li class="light">Learn More</li>
+                    <li>Company</li>
+                    <li>Careers</li>
+                    <li>Press Room</li>
+                </ul>
+            </div>
+            <div class="item">
+                <ul>
+                    <li class="light">Contact</li>
+                    <li class="light">Language</li>
+                    <li>English</li>
+                </ul>
+            </div>
+            <div class="item">
+                <ul>
+                    <li class="light">Get the lastest News</li>
+                    <li class="lower">
+                        See Magento in the news, find press<br>
+                        releases and resources for media.</li>
+                    <li class="light">Sign up</li>
+                </ul>
+            </div>
+            <div class="item">
+                <ul>
+                    <li class="light">Get in Touch</li>
+                    <li class="lower">
+                        We'd like to hear from you! Call us,<br>
+                        send us an email or talk to sales.</li>
+                    <li class="light">Contact us</li>
+                </ul>
+            </div>
         </div>
-        <div class="item">
-            <ul>
-                <li class="light">Get the lastest News</li>
-                <li class="lower">
-                    See Magento in the news, find press<br>
-                    releases and resources for media.</li>
-                <li class="light">Sign up</li>
-            </ul>
+        <div class="copyright">
+            <div class="copy">&copy; 2015 Magento, Inc. All rights reserved.</div>
+            <div class="space"></div>
+            <div class="privacy-policy">PRIVACY POLICY</div>
+            <div class="terms">TERMS OF SERVICE</div>
+            <div class="license">LICENSE/TRADEMARK FAQ</div>
         </div>
-        <div class="item">
-            <ul>
-                <li class="light">Get in Touch</li>
-                <li class="lower">
-                    We'd like to hear from you! Call us,<br>
-                    send us an email or talk to sales.</li>
-                <li class="light">Contact us</li>
-            </ul>
-        </div>
-    </div>
-    <div class="copyright">
-        <div class="copy">&copy; 2015 Magento, Inc. All rights reserved.</div>
-        <div class="space"></div>
-        <div class="privacy-policy">PRIVACY POLICY</div>
-        <div class="terms">TERMS OF SERVICE</div>
-        <div class="license">LICENSE/TRADEMARK FAQ</div>
     </div>
 </footer>

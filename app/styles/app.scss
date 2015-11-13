@@ -16,16 +16,17 @@ html, body {
     font-family: $main-font;
     font-weight: $regular-weight;
     font-size: $main-font-size;
-    background: $nav-color;
+    background: white;
 }
 
 @import 'pages/header';
 @import 'pages/footer';
 
 #main-content {
-    margin-top: 100px;
     background-color: white;
     min-height: 400px;
+    max-width: 1280px;
+    margin: 100px auto 0;
 }
 
 @import 'pages/index';
