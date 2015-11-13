@@ -4,6 +4,7 @@ $main-font-size: 16px;
 $regular-weight: 400;
 $semi-bold-weight: 600;
 $bold-weight: 700;
+$nav-color: rgb(49, 48, 43);
 
 * {
     box-sizing: border-box;
@@ -15,12 +16,16 @@ html, body {
     font-family: $main-font;
     font-weight: $regular-weight;
     font-size: $main-font-size;
+    background: $nav-color;
 }
 
 @import 'pages/header';
+@import 'pages/footer';
 
 #main-content {
     margin-top: 107px;
+    background-color: white;
+    min-height: 400px;
 }
 
 @import 'pages/products';

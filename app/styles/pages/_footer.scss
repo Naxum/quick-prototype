@@ -1,0 +1,89 @@
+footer {
+    background: $nav-color;
+    padding: 30px 0;
+    width: 100%;
+    display: block;
+
+    .description, .links {
+        border-bottom: 1px solid #5a5955;
+        padding-bottom: 30px;
+    }
+
+    .description {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .logo {
+            width: 200px;
+            height: 56px;
+            background-image: url('images/magento_logo_footer.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            filter: hue-rotate(-117deg);
+            -webkit-filter: hue-rotate(-117deg);
+        }
+
+        .text {
+            padding-left: 30px;
+            color: white;
+            width: 310px;
+        }
+    }
+
+    .links {
+        font-size: 13px;
+        font-weight: $bold-weight;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 30px 120px 15px 120px;
+
+        .item {
+
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                text-transform: uppercase;
+                color: rgb(202, 195, 180);
+
+                &.light {
+                    color: white;
+                    margin-bottom: 15px;
+                }
+
+                &.lower {
+                    text-transform: none;
+                    font-weight: $regular-weight;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+
+    .copyright {
+        display:flex;
+        color: rgb(152, 146, 135);
+        font-size: 12px;
+        font-weight: $regular-weight;
+        text-transform: uppercase;
+        padding: 0 120px;
+
+        div {
+            padding: 30px 0 0;
+
+            &:not(:first-of-type) {
+                padding-left: 30px;
+            }
+        }
+
+        .space {
+            flex-grow: 1;
+        }
+    }
+}
