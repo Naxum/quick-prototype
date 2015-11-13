@@ -1,1 +1,27 @@
+<header>
+    {{#link-to 'index'}}<div class="logo"></div>{{/link-to}}
+    <div class="space"></div>
+    <div class="search">
+        <div class="icon">Q</div>
+        <input type="text" placeholder="Search Magento">
+    </div>
+    <div class="free-demo">Free Demo</div>
+    <div class="account">My Account</div>
+</header>
+<nav>
+    <ul class="top-level">
+        {{#each model as |nav|}}
+        <li class="top-level-page">
+            <div class="top-level">{{nav.mainPage}}</div>
+            <ul class="subpages">
+                {{#each nav.subpages as |subpage|}}
+                <li class="subpage">{{subpage}}</li>
+                {{/each}}
+            </ul>
+        </li>
+        {{/each}}
+    </ul>
+</nav>
+<div id="main-content">
 {{outlet}}
+</div>
