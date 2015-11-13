@@ -1,1 +1,34 @@
-{{outlet}}
+<div id="products">
+    <div class="banner">
+        <div class="container">
+            <div class="heading">FUEL YOUR BUSINESS GROWTH WITH MAGENTO</div>
+            <div class="text">Boost your revenue and supercharge your operations with Magento’s suite of flexible, powerful, omnichannel commerce.</div>
+        </div>
+    </div>
+
+    {{#each model as |product|}}
+    <div class="product">
+        <div class="description">
+            <div class="heading">
+                <span class="orange">{{product.orangeHeader}}</span>
+                <span class="gray">{{product.grayHeader}}</span>
+            </div>
+            {{#each product.description as |text|}}
+            <p class="text">{{text}}</p>
+            {{/each}}
+            <div class="view-more">
+                <div class="features">{{product.callToAction}}</div>
+                <div class="request">{{product.request}} &rsaquo;</div>
+            </div>
+        </div>
+        <div class="highlights">
+            <div class="heading">Highlights:</div>
+            <ul>
+                {{#each product.highlights as |highlight|}}
+                <li class="highlight">{{highlight}}</li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+    {{/each}}
+</div>

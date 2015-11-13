@@ -106,6 +106,14 @@ nav {
         &:hover {
             color: $main-color;
         }
+
+        &.active {
+            color: $main-color;
+
+            &:hover {
+                color: lighten($main-color, 10%);
+            }
+        }
     }
 
     ul {
