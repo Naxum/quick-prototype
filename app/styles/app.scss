@@ -23,9 +23,10 @@ html, body {
 @import 'pages/footer';
 
 #main-content {
-    margin-top: 107px;
+    margin-top: 100px;
     background-color: white;
     min-height: 400px;
 }
 
+@import 'pages/index';
 @import 'pages/products';
