@@ -15,7 +15,7 @@ export default Ember.Route.extend({
             ]
         }, {
             mainPage: 'Customers',
-            //link: 'customers',
+            link: 'customers',
             subpages: [
                 'Success Stories',
                 'Client List'

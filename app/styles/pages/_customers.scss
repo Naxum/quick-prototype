@@ -1,0 +1,98 @@
+#customers {
+    padding: 0 60px;
+    margin: 60px 0 0;
+
+    .intro {
+        padding:60px 0;
+        color: rgb(68, 68, 68);
+
+        .heading {
+            font-size: 24px;
+            font-weight: $bold-weight;
+            margin-bottom: 15px;
+        }
+        .text {
+            font-size: 14px;
+        }
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0 60px 60px;
+
+        .customer {
+            width: 300px;
+            height: 270px;
+            background-color: #F0EFE9;
+            padding: 10px;
+            //margin: 20px;
+            margin-bottom: 30px;
+            cursor: pointer;
+
+            .image-container {
+                width: 100%;
+                height: 180px;
+                position: relative;
+
+                .image {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    z-index: 0;
+                    background-color: rgba(0,0,0,0.25);
+                }
+
+                .heading {
+                    position: relative;
+                    z-index: 100;
+                    color: #B920F4;
+                    padding: 7px;
+                    background-color: white;
+                    display: inline-block;
+                    margin-top: 100px;
+                    font-weight: $bold-weight;
+
+                    .main {
+                        display: inline-block;
+                    }
+                    .hover-only {
+                        display: none;
+                    }
+                }
+            }
+            .description {
+                padding: 15px 10px 0;
+                font-size: 16px;
+                color: rgb(68, 68, 68);
+            }
+
+            &:hover {
+                .image-container {
+                    .image {
+                        box-shadow: 0 0 60px rgba(0,0,0,0.5) inset;
+                        background-color: rgba(0,0,0,0.5);
+                        filter: brightness(50%);
+                        -webkit-filter: brightness(50%);
+                    }
+
+                    .heading {
+                        width: 100%;
+                        background-color: #F0EFE9;
+
+                        .main {
+                            display:none;
+                        }
+                        .hover-only {
+                            display:block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

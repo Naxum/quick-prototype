@@ -1,0 +1,20 @@
+<div id="customers">
+    <div class="intro">
+        <div class="heading">Customer Success Stories</div>
+        <div class="text">Discover how customers are innovating and growing their business with Magento Enterprise Edition.</div>
+    </div>
+    <div class="container">
+        {{#each model as |customer|}}
+        <div class="customer">
+            <div class="image-container">
+                <div class="image" style="background-image: url('assets/images/{{customer.image}}')"></div>
+                <div class="heading">
+                    <div class="main">{{customer.heading}}</div>
+                    <div class="hover-only">See Story &raquo;</div>
+                </div>
+            </div>
+            <div class="description">{{customer.description}}</div>
+        </div>
+        {{/each}}
+    </div>
+</div>
