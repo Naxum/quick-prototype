@@ -99,6 +99,15 @@ nav {
     font-size: 12px;
     font-weight: $semi-bold-weight;
 
+    a {
+        text-decoration: none;
+        color:white;
+        transition: 0.35s all;
+        &:hover {
+            color: $main-color;
+        }
+    }
+
     ul {
         list-style: none;
         padding: 0;
@@ -109,8 +118,11 @@ nav {
         display: inline-block;
         text-transform: uppercase;
         position: relative;
-        padding: 12px 15px;
         cursor: pointer;
+
+        .top-level {
+            padding: 12px 15px;
+        }
 
         .subpages {
             transition: all 0.15s;
